@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float timeToDie = 10f;   // 10 giây
+    public float timeToDie = 10f;   
     private float timer;
 
     private bool isDead = false;
@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        timer = timeToDie; // bắt đầu đếm
+        timer = timeToDie; 
     }
 
     void Update()
