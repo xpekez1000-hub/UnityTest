@@ -26,5 +26,9 @@ public class PlayerAttack : MonoBehaviour
         {
             anim.SetTrigger("Attack");
         }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            anim.SetTrigger("Strike");
+        }
     }
 }

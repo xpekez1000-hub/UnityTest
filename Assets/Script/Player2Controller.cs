@@ -15,6 +15,11 @@ public class Player2Controller : MonoBehaviour
     public KeyCode rightKey = KeyCode.RightArrow;
     public KeyCode jumpKey = KeyCode.RightShift;
     public KeyCode attackKey = KeyCode.Keypad1;
+    public KeyCode strikeKey = KeyCode.F5;
+    public KeyCode blockKey = KeyCode.F6;
+    public KeyCode hurtKey = KeyCode.F7;
+    
+
 
     Rigidbody2D rb;
     Animator anim;
@@ -52,6 +57,19 @@ public class Player2Controller : MonoBehaviour
         {
             anim.SetTrigger("Attack");
         }
+        if(Input.GetKeyDown(strikeKey))
+        {
+            anim.SetTrigger("Strike");
+        }
+        if (Input.GetKeyDown(blockKey))
+        {
+            anim.SetTrigger("Block");
+        }
+        if (Input.GetKeyDown(hurtKey))
+        {
+            anim.SetTrigger("Hurt");
+        }
+        
     }
 
     void FixedUpdate()
